@@ -36,7 +36,24 @@ function Content() {
         </div>
       </section>
 
-      <p className="px-7 md:text-center text-sm sm:text-xl mb-20 font-semibold text-gray-500">Your plan auto-renews at the end of 30 days from the 1st day you signed-up.</p>
+      <p className="px-7 md:text-center text-sm sm:text-xl mb-10 font-semibold text-gray-500">Your plan auto-renews at the end of 30 days from the 1st day you signed-up.</p>
+
+      <section className="flex justify-center mb-5">
+        <div className="grid grid-cols-1 justify-items-center gap-1 pb-7">
+          <h1 className="mt-10 text-4xl md:text-5xl lg:text-6xl font-serif">How it works?</h1>
+          <img src="/images/UNDERLINE.svg" />
+        </div>
+      </section>
+
+      <section className="sm:flex justify-center space-x-10">
+        <div>
+          <img src="/images/PERSON1.png" />
+        </div>
+        <div className='space-y-5 my-10 mx-5'>
+            <h1 className='max-w-lg text-3xl sm:text-4xl font-serif'>Setup your profile & preferences</h1>
+            <h2 className="max-w-md text-sm sm:text-lg font-semibold text-gray-500">Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</h2>
+          </div>
+      </section>
 
     </div>
   )
