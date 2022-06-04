@@ -16,8 +16,8 @@ function Content() {
       </section>
 
       <section className="flex justify-center mt-10 mb-5">
-        <div className="flex-col space-x-5 space-y-2 pb-10">
-          <h1 className="mt-10 text-5xl lg:text-6xl font-serif">Pick your plan</h1>
+        <div className="grid grid-cols-1 justify-items-center gap-1 pb-7">
+          <h1 className="mt-10 text-4xl md:text-5xl lg:text-6xl font-serif">Pick your plan</h1>
           <img src="/images/UNDERLINE.svg" />
         </div>
       </section>
