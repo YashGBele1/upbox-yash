@@ -6,8 +6,8 @@ function Content() {
       <section className="bg-[#F5F8FF]">
         <div className="pt-5 px-10 xl:px-20 xl:flex xl:justify-between">
           <div className='space-y-7 mt-5'>
-            <h1 className='max-w-lg text-5xl font-serif'>Look good without leaving your house.</h1>
-            <h2 className="max-w-sm text-xl">Upbox is the easiest way to look your best without having to hunt for the perfect makeup combination. Our stylists curate the latest trends and send them directly to your door every month.</h2>
+            <h1 className='max-w-lg text-4xl sm:text-5xl font-serif'>Look good without leaving your house.</h1>
+            <h2 className="max-w-sm text-lg sm:text-xl">Upbox is the easiest way to look your best without having to hunt for the perfect makeup combination. Our stylists curate the latest trends and send them directly to your door every month.</h2>
             <button className="hover:scale-105 text-sm font-bold tracking-widest uppercase border-4 border-[#EF8094] rounded-3xl px-8 py-2">sign up</button>
           </div>
 

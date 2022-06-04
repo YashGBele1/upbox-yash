@@ -8,8 +8,8 @@ function Header() {
             <nav className="px-10 lg:px-20 py-5 flex items-center justify-between">
                 <div className="flex items-center justify-between">
                     <span className="flex items-center space-x-5">
-                        <img src="/images/UB-LOGO.svg" className="w-16 object-cover" />
-                        <h1 className="tracking-widest text-justify text-5xl font-bold">UPBOX</h1>
+                        <img src="/images/UB-LOGO.svg" className="w-14 sm:w-16 object-cover" />
+                        <h1 className="tracking-widest text-justify text-3xl sm:text-5xl font-bold">UPBOX</h1>
                     </span>
                 </div>
 
