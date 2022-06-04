@@ -33,8 +33,8 @@ function Header() {
                         log in
                     </button>
                 </ul>
-                <div className="lg:hidden hover:cursor-pointer hover:scale-110">
-                    <AiOutlineMenu size={30} />
+                <div className="lg:hidden hover:cursor-pointer">
+                    <AiOutlineMenu size={25} />
                 </div>
             </nav>
         </header>
