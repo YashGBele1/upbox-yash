@@ -45,13 +45,13 @@ function Content() {
         </div>
       </section>
 
-      <section className="sm:flex justify-center space-x-10">
+      <section className="sm:flex justify-center space-x-10 pb-20">
         <div>
           <img src="/images/PERSON1.png" />
         </div>
-        <div className='space-y-5 my-10 mx-5'>
+        <div className='space-y-5 py-10 pr-7'>
             <h1 className='max-w-lg text-3xl sm:text-4xl font-serif'>Setup your profile & preferences</h1>
-            <h2 className="max-w-md text-sm sm:text-lg font-semibold text-gray-500">Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</h2>
+            <h2 className="max-w-sm text-sm sm:text-lg font-semibold text-gray-500">Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</h2>
           </div>
       </section>
 
