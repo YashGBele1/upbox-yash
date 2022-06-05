@@ -21,13 +21,13 @@ function Content() {
       </section>
 
       <section className="pb-10 px-10 lg:px-20 gap-10 lg:gap-20 grid grid-cols-1 lg:grid-cols-2">
-        <div className="bg-[url('/images/CURL-BG.svg')] bg-cover grid grid-cols-1 justify-items-center gap-5 px-5 sm:px-10 py-10 sm:py-20 border-8 rounded-xl border-gray-200">
+        <div className="bg-[url('/images/CURL-BG.svg')] bg-cover grid grid-cols-1 justify-items-center gap-5 px-5 sm:px-10 py-10 sm:py-20 border-4 rounded-xl border-gray-200">
           <h1 className="text-xl sm:text-2xl font-bold tracking-wider">Monthly</h1>
           <h1 className="text-4xl lg:text-5xl">$18/mo</h1>
           <button className="mt-2 hover:scale-105 text-xs sm:text-sm font-bold tracking-widest rounded-3xl px-8 py-3 uppercase bg-[#EF8094] text-white">find your box</button>
         </div>
 
-        <div className="bg-[url('/images/CURL-BG2.svg')] bg-cover grid grid-cols-1 justify-items-center gap-5 px-5 sm:px-10 py-10 sm:py-20 border-8 rounded-xl border-gray-200">
+        <div className="bg-[url('/images/CURL-BG2.svg')] bg-cover grid grid-cols-1 justify-items-center gap-5 px-5 sm:px-10 py-10 sm:py-20 border-4 rounded-xl border-gray-200">
           <h1 className="text-xl sm:text-2xl font-bold tracking-wider">Yearly</h1>
           <h1 className="text-4xl lg:text-5xl">$15/mo</h1>
           <button className="mt-2 hover:scale-105 text-xs sm:text-sm font-bold tracking-widest rounded-3xl px-8 py-3 uppercase bg-[#EF8094] text-white">find your box</button>
