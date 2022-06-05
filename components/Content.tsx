@@ -82,19 +82,19 @@ function Content() {
 
         <div className="px-10 sm:px-24 grid justify-items-center sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="grid justify-items-start gap-1 pb-3">
-            <img src="/images/img1.svg" />
+            <img src="/images/img1.svg" className="rounded-2xl" />
             <p className="text-sm sm:text-lg font-semibold text-gray-500">How to rock the lip look that turns heads</p>
           </div>
           <div className="grid justify-items-start gap-1 pb-3">
-            <img src="/images/img2.svg" />
+            <img src="/images/img2.svg" className="rounded-2xl" />
             <p className="text-sm sm:text-lg font-semibold text-gray-500">Find the perfect shade for the season</p>
           </div>
           <div className="grid justify-items-start gap-1 pb-3">
-            <img src="/images/img3.svg" />
+            <img src="/images/img3.svg" className="rounded-2xl" />
             <p className="text-sm sm:text-lg font-semibold text-gray-500">The 5 eye shadow secrets you never knew</p>
           </div>
           <div className="grid justify-items-start gap-1 pb-3">
-            <img src="/images/img4.svg" />
+            <img src="/images/img4.svg" className="rounded-2xl" />
             <p className="text-sm sm:text-lg font-semibold text-gray-500">The pro-tips for at home hair dying</p>
           </div>
         </div>
