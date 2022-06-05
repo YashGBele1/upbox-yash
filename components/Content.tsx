@@ -73,7 +73,7 @@ function Content() {
         </div>
       </section>
 
-      <section className="grid justify-center mb-20">
+      <section className="grid justify-center mb-20 sm:mt-20">
         <button className="hover:scale-105 text-xs sm:text-sm font-bold tracking-widest border-4 border-[#EF8094] rounded-3xl px-8 py-3 uppercase">try it for yourself</button>
       </section>
 
