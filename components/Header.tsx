@@ -1,38 +1,54 @@
 import Link from "next/link"
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Header() {
     const [nav, setNav] = useState(false)
     const handleNav = () => {
         setNav(!nav)
     }
+
+    const [isScrolled, setIsScrolled] = useState(false)
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true)
+            } else {
+                setIsScrolled(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return (
-        <header className="bg-white shadow-lg sticky top-0 z-[100]">
+        <header className={isScrolled ? "bg-white shadow-xl sticky top-0 z-[100]" : "bg-white sticky top-0"}>
             <img src="/images/TOPBAR.svg" className="w-full h-2 object-cover" />
             <nav className="px-10 lg:px-20 py-5 flex items-center justify-between">
                 <div className="flex items-center justify-between">
                     <span className="flex items-center space-x-5">
-                        <img src="/images/UB-LOGO.svg" className="w-14 sm:w-16" />
-                        <h1 className="tracking-widest text-justify text-3xl sm:text-5xl font-bold">UPBOX</h1>
+                        <img src="/images/UB-LOGO.svg" className="w-14 md:w-16" />
+                        <h1 className="tracking-widest text-justify text-3xl md:text-5xl font-bold">UPBOX</h1>
                     </span>
                 </div>
 
                 <div>
                     <ul className='hidden lg:flex lg:items-center space-x-6'>
-                        <Link href='/#this-month'>
+                        <Link href='/this-month'>
                             <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>this month</li>
                         </Link>
-                        <Link href='/#skin'>
+                        <Link href='/skin'>
                             <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>skin</li>
                         </Link>
-                        <Link href='/#hair'>
+                        <Link href='/hair'>
                             <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>hair</li>
                         </Link>
-                        <Link href='/#bath'>
+                        <Link href='/bath'>
                             <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>bath</li>
                         </Link>
-                        <Link href='/#sale'>
+                        <Link href='/sale'>
                             <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>sale</li>
                         </Link>
                         <button className="hover:scale-105 text-sm font-bold tracking-widest uppercase border-2 border-black rounded-3xl px-8 py-2 mx-4">
@@ -45,7 +61,7 @@ function Header() {
                 </div>
             </nav>
 
-            <section className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/50" : ""}>
+            <section className={nav ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-black/50" : ""}>
                 <div className={nav
                     ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
                     : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
