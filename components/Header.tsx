@@ -37,21 +37,21 @@ function Header() {
                 <div>
                     <ul className='hidden lg:flex lg:items-center space-x-6'>
                         <Link href='/this-month'>
-                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>this month</li>
+                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase text-gray-500'>this month</li>
                         </Link>
                         <Link href='/skin'>
-                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>skin</li>
+                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase text-gray-500'>skin</li>
                         </Link>
                         <Link href='/hair'>
-                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>hair</li>
+                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase text-gray-500'>hair</li>
                         </Link>
                         <Link href='/bath'>
-                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>bath</li>
+                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase text-gray-500'>bath</li>
                         </Link>
                         <Link href='/sale'>
-                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase'>sale</li>
+                            <li className='cursor-pointer hover:scale-105 text-sm font-bold tracking-widest uppercase text-gray-500'>sale</li>
                         </Link>
-                        <button className="hover:scale-105 text-sm font-bold tracking-widest uppercase border-2 border-black rounded-3xl px-8 py-2 mx-4">
+                        <button className="hover:scale-105 text-sm font-bold tracking-widest uppercase text-gray-500 border-4 border-gray-300 rounded-3xl px-8 py-2 mx-4">
                             log in
                         </button>
                     </ul>
@@ -64,7 +64,7 @@ function Header() {
             <section className={nav ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-black/50" : ""}>
                 <div className={nav
                     ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                    : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                    : "fixed left-[-100%] top-0 h-screen p-10 ease-in duration-500"
                     }>
                     <div>
                         <div className="flex items-center justify-between">
